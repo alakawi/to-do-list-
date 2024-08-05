@@ -230,10 +230,10 @@ body {
 
 @media (max-width: 600px) {
     #bord {
-        width: 95%;
+        width: 50%;
+        height: 60%;
         padding: 1em;
     }
-
     .input {
         width: 100%;
         max-width: 100%;
