@@ -1,0 +1,233 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, #6ebec4, #21504a);
+    font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+
+#bord {
+      font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+    background-color: rgb(176, 238, 230);
+    width: 80%;
+    max-width: 1000px;
+    padding: 2em;
+    box-shadow: 0 10px 25px rgba(0, 247, 255, 0.5), 0 10px 20px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    border-radius: 20px;
+}
+
+#title {
+    font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    color: rgb(0, 97, 97);
+    margin-bottom: 1em;
+   filter: drop-shadow(1px 1px 2px);
+}
+
+.input {
+    font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+    background-color: #acffff;
+    width: 100%; 
+    max-width: 400px; 
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid rgb(64, 136, 132);
+    border-radius: 5px;
+    box-shadow: -3px -3px 15px rgb(90, 231, 222);
+    box-sizing: border-box;
+}
+
+.input:focus {
+    color: rgb(0, 0, 0);
+    background-color:  #acffff;
+    outline: none;
+    box-shadow: -3px -3px 15px rgb(118, 234, 255);
+    transition: box-shadow 0.1s;
+}
+
+.Btn {
+    
+    font-size: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: rgb(0, 97, 97);
+}
+.Btn1 {
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 120px;
+    height: 45px;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: rgb(176, 238, 230);
+}
+#text1{
+    font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+    color: rgb(0, 97, 97);
+    position: absolute;
+    left: 19px;
+    filter: drop-shadow(0.1px 0.1px 2px);
+} 
+.Btn1:hover  {
+    font-size: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(255, 18, 18, 0.199);
+    background-color: rgb(255, 0, 0);
+}
+#text1:hover{
+    font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 19px;
+    filter: drop-shadow(0.1px 0.1px 2px);
+} 
+
+.Btn:hover {
+    font-size: 17px;
+    width: 125px;
+    border-radius: 50px;
+}
+
+.add {
+    color: rgb(176, 238, 230);
+    font-size: 2em;
+}
+
+.text {
+    font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+    position: absolute;
+    right: 1%;
+    width: 0%;
+    opacity: 0;
+    color: rgb(176, 238, 230);
+    font-size: 1em;
+    font-weight: 600;
+    transition-duration: 0.3s;
+}
+
+.Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    padding-right: 10px;
+}
+
+.Btn:active {
+    transform: translate(2px, 2px);
+}
+
+#taskList {
+    width: 100%; 
+    max-width: 400px; 
+    margin-top: 1em;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+#taskList div {
+    font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #2c807b;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#taskList div:hover {
+    font-family: "Poppins", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+    color: #ffffff;
+    background-color:rgb(0, 97, 97);
+    transform: translateY(-2px);
+}
+
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.taskItem:hover {
+    background-color: #e0f7fa;
+    transform: translateY(-2px);
+}
+
+.taskItem button {
+    background-color: rgb(0, 97, 97);
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.taskItem button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 97, 97);
+    transform: scale(1.05);
+}
+#clee {
+    position: absolute; 
+    top: 110%;
+    width: 100%; 
+}
+.taskItem.completed {
+    text-decoration: line-through;
+}
